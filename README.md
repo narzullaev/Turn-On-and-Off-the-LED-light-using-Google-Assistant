@@ -87,4 +87,8 @@ There is a library manager in each Arduino IDE under **Sketch>Include Library>Ma
 
 Next, download the source code and change the following parts:
 
-1. 
+1. Enter Wi-Fi SSID and Password to connect NodeMcu to internet.
+```C++
+#define WIFI_SSID "Your Wi-Fi SSID"         // enter your wifi SSID
+#define WIFI_PASS "Your Wi-Fi Password"     // enter the Password
+```
