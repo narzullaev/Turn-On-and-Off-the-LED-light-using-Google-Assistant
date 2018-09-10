@@ -20,19 +20,17 @@ Adafruit_MQTT_Subscribe onoff = Adafruit_MQTT_Subscribe(&mqtt, MQTT_NAME "/f/ono
 Adafruit_MQTT_Publish LightsStatus = Adafruit_MQTT_Publish(&mqtt, MQTT_NAME "/f/LightsStatus");
 
 
-void setup()
-{
+void setup(){
   Serial.begin(9600);
   pinMode(LED_BUILTIN, OUTPUT);
 
 
-  //Connect to WiFi
+  //Connecting to WiFi
   Serial.print("\n\nConnecting Wifi>");
   WiFi.begin(WIFI_SSID, WIFI_PASS);
   digitalWrite(LED_BUILTIN, LOW);
 
-  while (WiFi.status() != WL_CONNECTED)
-  {
+  while (WiFi.status() != WL_CONNECTED){
     Serial.print(">");
     delay(50);
   }
@@ -48,60 +46,47 @@ void setup()
 
 }
 
-void loop()
-{
+void loop(){
+
   //Connect/Reconnect to MQTT
   MQTT_connect();
 
-  //Read from our subscription queue until we run out, or
   //wait up to 5 seconds for subscription to update
   Adafruit_MQTT_Subscribe * subscription;
-  while ((subscription = mqtt.readSubscription(5000)))
-  {
+  while ((subscription = mqtt.readSubscription(5000))){
     //If we're in here, a subscription updated...
-    if (subscription == &onoff)
-    {
+    if (subscription == &onoff){
       //Print the new value to the serial monitor
       Serial.print("onoff: ");
       Serial.println((char*) onoff.lastread);
 
       //If the new value is  "ON", turn the light on.
       //Otherwise, turn it off.
-      if (!strcmp((char*) onoff.lastread, "ON"))
-      {
+      if (!strcmp((char*) onoff.lastread, "ON")){
         //active low logic
         digitalWrite(led, HIGH);
         LightsStatus.publish("ON");
       }
-      else if (!strcmp((char*) onoff.lastread, "OFF"))
-      {
+      else if (!strcmp((char*) onoff.lastread, "OFF")){
         digitalWrite(led, LOW);
         LightsStatus.publish("OFF");
 
       }
-      else
-      {
+      else{
         LightsStatus.publish("ERROR");
       }
     }
-    else
-    {
-      //LightsStatus.publish("ERROR");
+    else{
+      LightsStatus.publish("ERROR");
     }
   }
-  //  if (!mqtt.ping())
-  //  {
-  //    mqtt.disconnect();
-  //  }
 }
 
 
-void MQTT_connect()
-{
+void MQTT_connect(){
 
   //  // Stop if already connected
-  if (mqtt.connected() && mqtt.ping())
-  {
+  if (mqtt.connected() && mqtt.ping()){
     //    mqtt.disconnect();
     return;
   }
@@ -112,15 +97,13 @@ void MQTT_connect()
 
   Serial.print("Connecting to MQTT... ");
   uint8_t retries = 3;
-  while ((ret = mqtt.connect()) != 0) // connect will return 0 for connected
-  {
+  while ((ret = mqtt.connect()) != 0){
     Serial.println(mqtt.connectErrorString(ret));
     Serial.println("Retrying MQTT connection in 5 seconds...");
     mqtt.disconnect();
     delay(5000);  // wait 5 seconds
     retries--;
-    if (retries == 0)
-    {
+    if (retries == 0){
       ESP.reset();
     }
   }
