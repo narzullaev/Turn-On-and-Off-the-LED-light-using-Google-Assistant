@@ -1,21 +1,22 @@
+// importing the required libraries
 #include <ESP8266WiFi.h>
 #include "Adafruit_MQTT.h"
 #include "Adafruit_MQTT_Client.h"
 
-#define WIFI_SSID "YTL_GBH"
-#define WIFI_PASS "bnmGHJ123"
+#define WIFI_SSID "Your Wi-Fi SSID"         // enter your wifi SSID
+#define WIFI_PASS "Your Wi-Fi Password"     // enter the Password
 
 #define MQTT_SERV "io.adafruit.com"
 #define MQTT_PORT 1883
-#define MQTT_NAME "sardor"
-#define MQTT_PASS "9bee43a95c304ff58e8fd8265e107f31"
+#define MQTT_NAME "mqtt user name"          // enter your Adafruit user name here
+#define MQTT_PASS "your unique pass"        // you can get this from your Adafruit
 
 int led = D7;
 
 WiFiClient client;
 Adafruit_MQTT_Client mqtt(&client, MQTT_SERV, MQTT_PORT, MQTT_NAME, MQTT_PASS);
 
-Adafruit_MQTT_Subscribe onoff = Adafruit_MQTT_Subscribe(&mqtt, MQTT_NAME "/f/onof");
+Adafruit_MQTT_Subscribe onoff = Adafruit_MQTT_Subscribe(&mqtt, MQTT_NAME "/f/onoff");
 Adafruit_MQTT_Publish LightsStatus = Adafruit_MQTT_Publish(&mqtt, MQTT_NAME "/f/LightsStatus");
 
 
