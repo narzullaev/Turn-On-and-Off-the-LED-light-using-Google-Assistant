@@ -69,7 +69,18 @@ Now we are done with **if this** part. Next, we will configure the **then that**
 
 ![screenshot from 2018-09-10 19-04-48](https://user-images.githubusercontent.com/33327894/45294009-79b69f00-b52c-11e8-8db9-39615ffae422.jpg)
 
-Then, from the list of the services we will search for Adafruit. When we found adafruit we will click on it and we can see **Send data to Adafruit IO** aplet there. Next, we will fill in the fields (if you are did not connect your IFTTT to Adafruit IFTTT will ask you to connect to Adafruit first). You should be able to choose the **Feed name** from the list of feeds (which we have created earlier). Fill in the fields as follows: 
+Then, from the list of the services we will search for Adafruit. When we found adafruit we will click on it and we can see **Send data to Adafruit IO** aplet there. Next, we will fill in the fields (if you did not connect your IFTTT to Adafruit IFTTT will ask you to connect to Adafruit first). You should be able to choose the **Feed name** from the list of feeds (which we have created earlier). Fill in the fields as follows and click on **Create Action**: 
 
 ![screenshot from 2018-09-10 19-11-40](https://user-images.githubusercontent.com/33327894/45294307-7bcd2d80-b52d-11e8-8a00-618666f6b524.jpg)
+
+After this step IFTTT will ask you to Review and Finish, click **Finish**. Now we are done with Turning On part. 
+Next we should create another applet to trigger Adafuit to turn off the light. To do this, follow the steps above and fill in the fields accordingly. This time our aim is to create another applet to turn off the light, thus we will change **What do you want to say**: Turn on the light part to Turn off the light and other changes as follows:
+### **IF This** part
+ -**What do you want the Assistant to say in response?**: Okay. Turning on the light **to** Okay. Turning off the light.
+### **If That** part
+- (Adafruit)**Data to save**: ON **to** OFF
+
+
+
+
 
