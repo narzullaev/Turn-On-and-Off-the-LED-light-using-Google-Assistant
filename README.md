@@ -103,3 +103,13 @@ To obtain username and AIO key go to your Adafruit Lights dashboard and click on
 ![screenshot from 2018-09-10 21-20-57 1](https://user-images.githubusercontent.com/33327894/45300152-2e0df080-b540-11e8-8e79-d2a86686bd37.jpg)
 
 Finally, upload the code to NodeMcu.
+
+## Contributors 
+
+- Sardor Narzullaev <mr.narzullaev@gmail.com>
+
+## Liicence and Copyright 
+
+Copyright (c) 2018 Sardor Narzullaev
+
+This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](https://github.com/narzullaev/Turn-On-and-Off-the-LED-light-using-Google-Assistant/blob/master/LICENSE) file for details
