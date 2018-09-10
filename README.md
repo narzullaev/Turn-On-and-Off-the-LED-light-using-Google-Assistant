@@ -53,7 +53,7 @@ Next, we will create the *if this* part of our applet. You should be able to see
 
 ![screenshot from 2018-09-10 18-35-07](https://user-images.githubusercontent.com/33327894/45292773-c6987680-b528-11e8-868a-88c57ab5a7d2.jpg)
 
-Then we should choose **Google Assitant** service from the list of the services provided. You can search for it in the space provided. Then, you should be able to see the followng page and from there choose **Say a simple phrase**. 
+Then we should choose **Google Assitant** service from the list of the services provided. You can search for it in the field provided. Then, you should be able to see the followng page and from there choose **Say a simple phrase**. 
 
 ![screenshot from 2018-09-10 18-41-35](https://user-images.githubusercontent.com/33327894/45292916-3dce0a80-b529-11e8-8893-e5aa5da35bb4.jpg)
 
@@ -63,8 +63,13 @@ Next, you should complete the trigger fields. You can enter the word which trigg
 - **And another way? (optional)**: Turn on light
 - **What do you want the Assistant to say in response?**: Okay. Turning on the light
 - **Language**: English
-After completion of those fields click **Create Trigger**. Now we are done with **if this** part. Next, we will configure the **then that** part. For this click on top of **then that** in the following page.
+After completion of those fields click **Create Trigger**.
+
+Now we are done with **if this** part. Next, we will configure the **then that** part. For this click on top of **then that** in the following page.
 
 ![screenshot from 2018-09-10 19-04-48](https://user-images.githubusercontent.com/33327894/45294009-79b69f00-b52c-11e8-8db9-39615ffae422.jpg)
 
+Then, from the list of the services we will search for Adafruit. When we found adafruit we will click on it and we can see **Send data to Adafruit IO** aplet there. Next, we will fill in the fields (if you are did not connect your IFTTT to Adafruit IFTTT will ask you to connect to Adafruit first). You should be able to choose the **Feed name** from the list of feeds (which we have created earlier). Fill in the fields as follows: 
+
+![screenshot from 2018-09-10 19-11-40](https://user-images.githubusercontent.com/33327894/45294307-7bcd2d80-b52d-11e8-8a00-618666f6b524.jpg)
 
