@@ -57,5 +57,14 @@ Then we should choose **Google Assitant** service from the list of the services 
 
 ![screenshot from 2018-09-10 18-41-35](https://user-images.githubusercontent.com/33327894/45292916-3dce0a80-b529-11e8-8893-e5aa5da35bb4.jpg)
 
+Next, you should complete the trigger fields. You can enter the word which triggers Google Assistant to do something and also you can choose the language from the list of languages provided. In our case the trigeer fiels are as follows:
+- **What do you want to say**: Turn on the light
+- **What's another way to say it? (optional**: Lights on (You can leave it blank if you want)
+- **And another way? (optional)**: Turn on light
+- **What do you want the Assistant to say in response?**: Okay. Turning on the light
+- **Language**: English
+After completion of those fields click **Create Trigger**. Now we are done with **if this** part. Next, we will configure the **then that** part. For this click on top of **then that** in the following page.
+
+![screenshot from 2018-09-10 19-04-48](https://user-images.githubusercontent.com/33327894/45294009-79b69f00-b52c-11e8-8db9-39615ffae422.jpg)
 
 
