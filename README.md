@@ -21,5 +21,17 @@ There is a library manager in each Arduino IDE under **Sketch>Include Library>Ma
 
 ![screenshot from 2018-09-10 17-13-39](https://user-images.githubusercontent.com/33327894/45288712-e9715d80-b51d-11e8-80a1-7a139485eedf.jpg)
 
+## Step Two - Configuration of Adafruit and IFTT 
+I assume you have already created accounts at Adafruit and IFTT. First we will start from Adafruit. 
+For this go to **[Adafruit](https://io.adafruit.com) > Dashboard** Click **Actions** and **Create A New Dashboard** as shown below. You can give whatever name you want. In my case I named my dashboard as *Lights*
+
+![screenshot from 2018-09-10 17-32-24](https://user-images.githubusercontent.com/33327894/45289499-e2e3e580-b51f-11e8-88b2-538c2835a237.jpg)
+
+After you created a dashboard open that dashboard and you should be able to see a blank dashboard. There are a few button on the top right corner click **+** to add a newblock (*I already have them*). 
+
+![screenshot from 2018-09-10 17-39-37](https://user-images.githubusercontent.com/33327894/45289790-a1a00580-b520-11e8-808b-e08815a2777c.jpg)
+
+
+
 
 
