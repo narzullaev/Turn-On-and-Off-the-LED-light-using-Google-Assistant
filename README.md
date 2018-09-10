@@ -112,4 +112,4 @@ Finally, upload the code to NodeMcu.
 
 Copyright (c) 2018 Sardor Narzullaev
 
-This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](https://github.com/narzullaev/Turn-On-and-Off-the-LED-light-using-Google-Assistant/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
