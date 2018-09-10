@@ -22,14 +22,24 @@ There is a library manager in each Arduino IDE under **Sketch>Include Library>Ma
 ![screenshot from 2018-09-10 17-13-39](https://user-images.githubusercontent.com/33327894/45288712-e9715d80-b51d-11e8-80a1-7a139485eedf.jpg)
 
 ## Step Two - Configuration of Adafruit and IFTT 
-I assume you have already created accounts at Adafruit and IFTT. First we will start from Adafruit. 
-For this go to **[Adafruit](https://io.adafruit.com) > Dashboard** Click **Actions** and **Create A New Dashboard** as shown below. You can give whatever name you want. In my case I named my dashboard as *Lights*
+First we will start from Adafruit. 
+For this we go to **[Adafruit](https://io.adafruit.com) > Dashboard** Click **Actions** and **Create A New Dashboard**. We can give whatever name we want.
 
 ![screenshot from 2018-09-10 17-32-24](https://user-images.githubusercontent.com/33327894/45289499-e2e3e580-b51f-11e8-88b2-538c2835a237.jpg)
 
-After you created a dashboard open that dashboard and you should be able to see a blank dashboard. There are a few button on the top right corner click **+** to add a newblock (*I already have them*). 
+After we created a dashboard open that dashboard and we should be able to see a blank dashboard. There are a few buttons on the top right corner. We should click **+** to add a newblock (*I already have them*).  
 
 ![screenshot from 2018-09-10 17-39-37](https://user-images.githubusercontent.com/33327894/45289790-a1a00580-b520-11e8-808b-e08815a2777c.jpg)
+
+Next, we will choose our desired block. We need a toggle and it should be the first block in the list of shown blocks. We will add that block.  It should look something like this
+
+![screenshot from 2018-09-10 17-44-03](https://user-images.githubusercontent.com/33327894/45290502-5850b580-b522-11e8-8d2e-650e8bd7f4c4.jpg)
+
+When we choose a new block the new page will appear. Then, we will enter the feed/block name in the space provided
+
+![screenshot from 2018-09-10 17-54-09](https://user-images.githubusercontent.com/33327894/45291015-97cbd180-b523-11e8-8dae-62f2f7100f12.jpg)
+
+
 
 
 
