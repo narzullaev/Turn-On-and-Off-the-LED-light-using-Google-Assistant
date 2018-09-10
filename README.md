@@ -12,16 +12,7 @@ You will also need to perform the following tasks before you can start this guid
 - **Create an account at [IFTT](https://ifttt.com/)**: If This Then That, also known as IFTTT, is a free web-based service to create chains of simple conditional statements, called applets.
 - **Create an account at [Adafruit](https://io.adafruit.com/)**: Adafruit will help us to recieve signals from IFTT to NodeMcu board. 
 
-## Step One - Installing list of libraries to our Arduino IDE
-There is a library manager in each Arduino IDE under **Sketch>Include Library>Manage Library** path. When you get there there wait a minute for Arduino to update the list of libraries. There is a search bar provided and you can search and instll the following libraries: 
-- _ESP8266WiFi_
-- _Adafruit_MQTT_
-
-**Example**
-
-![screenshot from 2018-09-10 17-13-39](https://user-images.githubusercontent.com/33327894/45288712-e9715d80-b51d-11e8-80a1-7a139485eedf.jpg)
-
-## Step Two - Configuration of Adafruit.  
+## Step One - configuration of Adafruit
 First we will go to **[Adafruit](https://io.adafruit.com) > Dashboard** Click **Actions** and **Create A New Dashboard**. We can give whatever name we want.
 
 ![screenshot from 2018-09-10 17-32-24](https://user-images.githubusercontent.com/33327894/45289499-e2e3e580-b51f-11e8-88b2-538c2835a237.jpg)
@@ -44,7 +35,7 @@ The next step is the Block Settings. We only need to provide the Block Title, bu
 
 Now we need to create another block to save light status (ON/OFF). For this, follow the above steps, but instead of creating a toggle block choose **Text** block this time and name it as **LightStatus** (we can actually give any name we want, but we need this name as it is as we will be using this exact same name in our coding later on). We can also change the font size there (Small, Medium, Large, Big, Huge). 
 
-## Step Three - Configuration of IFTT 
+## Step Two - Configuration of IFTT 
 We will start by opennig the **[MyApplets](https://ifttt.com/my_applets) page of IFTT**. We can see that there are no applets yet, so we will create two applets - one for turning on the light and the another for turnning of the light. For this, click the **New Applet** button. 
 
 ![screenshot from 2018-09-10 18-33-12](https://user-images.githubusercontent.com/33327894/45292529-1591dc00-b528-11e8-87e4-f92ab8ab2c81.jpg)
@@ -80,6 +71,16 @@ Next we should create another applet to trigger Adafuit to turn off the light. T
 ### **If That** part
 - (Adafruit)**Data to save**: ON **to** OFF
 
+Now we are done with configuration of Adafruit and IFTTT so lets move on to coding part.
+
+## Step Three Installing list of libraries to our Arduino IDE 
+There is a library manager in each Arduino IDE under **Sketch>Include Library>Manage Library** path. When you get there there wait a minute for Arduino to update the list of libraries. There is a search bar provided and you can search and instll the following libraries: 
+- _ESP8266WiFi_
+- _Adafruit_MQTT_
+
+**Example**
+
+![screenshot from 2018-09-10 17-13-39](https://user-images.githubusercontent.com/33327894/45288712-e9715d80-b51d-11e8-80a1-7a139485eedf.jpg)
 
 
 
