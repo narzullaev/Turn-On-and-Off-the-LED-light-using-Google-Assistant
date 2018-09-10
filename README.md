@@ -8,4 +8,4 @@ In order to complete this tutorial, you will need to have NodeMcu ESP8266 Wi-Fi 
 
 You will need to perform the following tasks before you can start this guide:
 - **Install Arduino IDE**
-- **Create an account at [IFTT] (https://ifttt.com)**: If This Then That, also known as IFTTT, is a free web-based service to create chains of simple conditional statements, called applets. We 
+- **Create an account at [IFTT](https://ifttt.com/)**: If This Then That, also known as IFTTT, is a free web-based service to create chains of simple conditional statements, called applets. We 
