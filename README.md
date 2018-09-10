@@ -51,6 +51,11 @@ We will start by opennig the **[MyApplets](https://ifttt.com/my_applets) page of
 
 Next, we will create the *if this* part of our applet. You should be able to see the following page when you clicked **New Applet**. From here click on top of **+this**. 
 
+![screenshot from 2018-09-10 18-35-07](https://user-images.githubusercontent.com/33327894/45292773-c6987680-b528-11e8-868a-88c57ab5a7d2.jpg)
+
+Then we should choose **Google Assitant** service from the list of the services provided. You can search for it in the space provided. Then, you should be able to see the followng page and from there choose **Say a simple phrase**. 
+
+![screenshot from 2018-09-10 18-41-35](https://user-images.githubusercontent.com/33327894/45292916-3dce0a80-b529-11e8-8893-e5aa5da35bb4.jpg)
 
 
 
