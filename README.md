@@ -73,8 +73,11 @@ Next we should create another applet to trigger Adafuit to turn off the light. T
 
 Now we are done with configuration of Adafruit and IFTTT so lets move on to coding part.
 
-## Step Three Installing list of libraries to our Arduino IDE 
-There is a library manager in each Arduino IDE under **Sketch>Include Library>Manage Library** path. When you get there there wait a minute for Arduino to update the list of libraries. There is a search bar provided and you can search and instll the following libraries: 
+## Step Three - Coding and Deploying
+In this section we will deal with Coding and Deploying. The source code is already provide and all you need to do is just change some fields in the source code, but before that we need to install required libraries. 
+
+### Installing the list of libraries to our Arduino IDE 
+There is a library manager in each Arduino IDE under **Sketch>Include Library>Manage Library** path. When you get there wait a minute for Arduino to update the list of libraries. Then, there is a search filed provided and you can search and instll the following libraries: 
 - _ESP8266WiFi_
 - _Adafruit_MQTT_
 
@@ -82,6 +85,6 @@ There is a library manager in each Arduino IDE under **Sketch>Include Library>Ma
 
 ![screenshot from 2018-09-10 17-13-39](https://user-images.githubusercontent.com/33327894/45288712-e9715d80-b51d-11e8-80a1-7a139485eedf.jpg)
 
-
+Next, download the source code and 
 
 
